@@ -1,0 +1,111 @@
+#nav {
+    background-color: black !important;
+    color: rgb(238, 205, 18) !important;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(238, 205, 18);
+    border-radius: 5px;
+}
+
+#navBrand {
+    font-size: 1.75rem;
+    color: rgb(238, 205, 18);
+}
+
+#navLink {
+    font-size: 1.2rem;
+    color: rgb(238, 205, 18);
+}
+
+#searchBtn {
+    border-color: rgb(238, 205, 18);
+    color: rgb(238, 205, 18);
+    font-weight: 500;
+}
+
+#searchBtn:hover {
+    border-color: rgb(238, 205, 18);
+    color: black;
+    font-weight: 500;
+    background-color: rgb(238, 205, 18);
+}
+
+.check {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 20px 0;
+    margin-top: 60px;
+    background-color: rgba(255, 215, 0, 0.7);
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .check {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .check {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #navLink {
+        font-size: 1rem;
+    }
+
+    #navBrand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .check {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #navBrand {
+        font-size: 1.25rem;
+    }
+
+    #navLink {
+        font-size: 0.9rem;
+    }
+}
+
+.check li {
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.check li:hover {
+    color: rgb(238, 205, 18);
+    background-color: black;
+    border-radius: 5px;
+}
+
+.check :global(a) {
+    text-decoration: none;
+}
+
+.navItem {
+    margin-top: 10px;
+    color: rgb(238, 205, 18);
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .navItem {
+        font-size: 1.1rem;
+    }
+}
